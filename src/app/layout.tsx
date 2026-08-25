@@ -88,6 +88,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  verification: {
+    google: "I_94vyJz3gC0rfG0v2QrV9Y4T8MtkFhAvNeF5n_Udms",
+  },
   category: "Automotive & Concierge Services",
 };
 
