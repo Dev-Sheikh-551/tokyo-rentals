@@ -227,7 +227,7 @@ export default function Hero() {
           ref={scrollIndicatorRef}
           onClick={scrollToNext}
           aria-label="Scroll to explore collection"
-          className="cursor-pointer group flex flex-col items-center space-y-2 select-none focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/60 rounded-sm"
+          className="cursor-pointer group flex flex-col items-center space-y-2 select-none focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/60 rounded-sm cursor-target"
         >
           <span className="text-[9px] sm:text-[10px] uppercase tracking-super-wide text-muted-grey group-hover:text-warm-ivory transition-colors duration-300">
             Scroll to Explore

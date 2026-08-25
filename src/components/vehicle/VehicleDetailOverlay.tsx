@@ -327,7 +327,7 @@ export default function VehicleDetailOverlay({
               type="button"
               onClick={onClose}
               aria-label="Close vehicle detail"
-              className="group flex items-center space-x-2 text-[9px] sm:text-[10px] uppercase tracking-[0.28em] text-muted-grey/60 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-white/30 rounded-sm px-1 cursor-pointer"
+              className="group flex items-center space-x-2 text-[9px] sm:text-[10px] uppercase tracking-[0.28em] text-muted-grey/60 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-white/30 rounded-sm px-1 cursor-pointer cursor-target"
             >
               <span>Close</span>
               <svg
@@ -385,7 +385,7 @@ export default function VehicleDetailOverlay({
               type="button"
               onClick={handleEnquiry}
               aria-label={`Start an enquiry about the ${vehicle?.name ?? "vehicle"}`}
-              className="group flex items-center space-x-4 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/50 rounded-sm cursor-pointer"
+              className="group flex items-center space-x-4 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/50 rounded-sm cursor-pointer cursor-target"
             >
               <span className="font-serif-display font-light text-xl sm:text-2xl lg:text-3xl text-warm-ivory group-hover:text-champagne-light transition-colors duration-400 tracking-tight">
                 Start an Enquiry
@@ -428,7 +428,7 @@ export default function VehicleDetailOverlay({
                     data-vehicle-id={vehicle?.id}
                     data-vehicle-name={vehicle?.name}
                     aria-label={`Contact Tokyo Rentals & Concierge about ${vehicle?.name ?? "this vehicle"} on WhatsApp`}
-                    className="group inline-flex items-center space-x-1.5 text-[10px] sm:text-xs uppercase tracking-[0.24em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                    className="group inline-flex items-center space-x-1.5 text-[10px] sm:text-xs uppercase tracking-[0.24em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                   >
                     <span>WhatsApp</span>
                     <span
@@ -446,7 +446,7 @@ export default function VehicleDetailOverlay({
                     data-vehicle-id={vehicle?.id}
                     data-vehicle-name={vehicle?.name}
                     aria-label={`Email Tokyo Rentals & Concierge about ${vehicle?.name ?? "this vehicle"}`}
-                    className="group inline-flex items-center space-x-1.5 text-[10px] sm:text-xs uppercase tracking-[0.24em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                    className="group inline-flex items-center space-x-1.5 text-[10px] sm:text-xs uppercase tracking-[0.24em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                   >
                     <span>Email</span>
                     <span
@@ -463,7 +463,7 @@ export default function VehicleDetailOverlay({
                     data-contact-method="phone"
                     data-vehicle-id={vehicle?.id}
                     aria-label="Call Tokyo Rentals & Concierge"
-                    className="group inline-flex items-center space-x-1.5 text-[10px] sm:text-xs uppercase tracking-[0.24em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                    className="group inline-flex items-center space-x-1.5 text-[10px] sm:text-xs uppercase tracking-[0.24em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                   >
                     <span>Phone</span>
                     <span

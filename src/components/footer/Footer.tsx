@@ -182,7 +182,7 @@ export default function Footer() {
                     e.preventDefault();
                     scrollToSection("#collection");
                   }}
-                  className="group inline-flex items-center space-x-2 text-xs sm:text-sm text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 cursor-pointer"
+                  className="group inline-flex items-center space-x-2 text-xs sm:text-sm text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 cursor-pointer cursor-target"
                 >
                   <span>Collection</span>
                 </a>
@@ -192,7 +192,7 @@ export default function Footer() {
                     e.preventDefault();
                     scrollToSection("#experience");
                   }}
-                  className="group inline-flex items-center space-x-2 text-xs sm:text-sm text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 cursor-pointer"
+                  className="group inline-flex items-center space-x-2 text-xs sm:text-sm text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 cursor-pointer cursor-target"
                 >
                   <span>Experience</span>
                 </a>
@@ -202,7 +202,7 @@ export default function Footer() {
                     e.preventDefault();
                     scrollToSection("#enquiry");
                   }}
-                  className="group inline-flex items-center space-x-2 text-xs sm:text-sm text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 cursor-pointer"
+                  className="group inline-flex items-center space-x-2 text-xs sm:text-sm text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 cursor-pointer cursor-target"
                 >
                   <span>Enquiry</span>
                 </a>
@@ -216,7 +216,7 @@ export default function Footer() {
                 <button
                   type="button"
                   onClick={() => openEnquiry()}
-                  className="group inline-flex items-center space-x-2 text-xs sm:text-sm text-warm-ivory hover:text-champagne-light transition-colors duration-200 cursor-pointer text-left focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                  className="group inline-flex items-center space-x-2 text-xs sm:text-sm text-warm-ivory hover:text-champagne-light transition-colors duration-200 cursor-pointer text-left focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                 >
                   <span>Enquire</span>
                   <span
@@ -237,7 +237,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         data-contact-method="whatsapp"
                         aria-label="Contact Tokyo Rentals & Concierge on WhatsApp"
-                        className="text-[10px] sm:text-xs text-warm-sand/60 hover:text-warm-ivory transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                        className="text-[10px] sm:text-xs text-warm-sand/60 hover:text-warm-ivory transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                       >
                         WhatsApp
                       </a>
@@ -247,7 +247,7 @@ export default function Footer() {
                         href={mailtoLink}
                         data-contact-method="email"
                         aria-label="Email Tokyo Rentals & Concierge"
-                        className="text-[10px] sm:text-xs text-warm-sand/60 hover:text-warm-ivory transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                        className="text-[10px] sm:text-xs text-warm-sand/60 hover:text-warm-ivory transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                       >
                         Email
                       </a>
@@ -257,7 +257,7 @@ export default function Footer() {
                         href={phoneLink}
                         data-contact-method="phone"
                         aria-label="Call Tokyo Rentals & Concierge"
-                        className="text-[10px] sm:text-xs text-warm-sand/60 hover:text-warm-ivory transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                        className="text-[10px] sm:text-xs text-warm-sand/60 hover:text-warm-ivory transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                       >
                         Phone
                       </a>
@@ -286,7 +286,7 @@ export default function Footer() {
             type="button"
             onClick={scrollToTop}
             aria-label="Back to top of page"
-            className="group inline-flex items-center space-x-2 text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-muted-grey/60 hover:text-warm-ivory transition-colors duration-300 cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+            className="group inline-flex items-center space-x-2 text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-muted-grey/60 hover:text-warm-ivory transition-colors duration-300 cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
           >
             <span>Back to top</span>
             <svg

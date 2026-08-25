@@ -82,7 +82,7 @@ export default function VehicleSlide({
               type="button"
               onClick={() => openDetail(vehicle.id)}
               aria-label={`View ${vehicle.name} details`}
-              className="group flex items-center space-x-2 text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-warm-ivory hover:text-champagne-light transition-colors cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/60 rounded-sm"
+              className="group flex items-center space-x-2 text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-warm-ivory hover:text-champagne-light transition-colors cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/60 rounded-sm cursor-target"
             >
               <span>View vehicle</span>
               <ArrowUpRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -93,7 +93,7 @@ export default function VehicleSlide({
               type="button"
               onClick={() => openEnquiry(vehicle.id)}
               aria-label={`Enquire about ${vehicle.name}`}
-              className="group text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-muted-grey/70 hover:text-warm-sand transition-colors cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-white/30 rounded-sm"
+              className="group text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-muted-grey/70 hover:text-warm-sand transition-colors cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-white/30 rounded-sm cursor-target"
             >
               Enquire
             </button>
@@ -114,6 +114,7 @@ export default function VehicleSlide({
               border border-white/[0.08] bg-obsidian-900
               group shadow-2xl cursor-pointer
               focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40
+              cursor-target
             "
           >
             {/* Oversized canvas for zero-bleed parallax */}

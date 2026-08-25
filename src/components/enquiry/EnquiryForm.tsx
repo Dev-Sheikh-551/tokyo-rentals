@@ -302,7 +302,7 @@ export default function EnquiryForm({ onSuccess, initialVehicleId }: EnquiryForm
         <button
           type="submit"
           disabled={isSubmitting}
-          className="group relative w-full sm:w-auto flex items-center justify-center sm:justify-start space-x-4 py-4 sm:py-0 border-t border-white/10 sm:border-0 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/50 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="group relative w-full sm:w-auto flex items-center justify-center sm:justify-start space-x-4 py-4 sm:py-0 border-t border-white/10 sm:border-0 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/50 disabled:opacity-50 disabled:cursor-not-allowed cursor-target cursor-pointer"
         >
           <span className="relative text-xs sm:text-[11px] uppercase tracking-[0.32em] text-warm-ivory group-hover:text-champagne-light transition-colors duration-300">
             {isSubmitting ? "Sending enquiry…" : "Send Enquiry"}

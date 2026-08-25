@@ -48,7 +48,7 @@ export default function Navbar({ className }: NavbarProps) {
           type="button"
           onClick={scrollToTop}
           aria-label="Tokyo Rentals & Concierge - Back to top"
-          className="flex flex-col group cursor-pointer select-none text-left focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/60 rounded-sm"
+          className="flex flex-col group cursor-pointer select-none text-left focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/60 rounded-sm cursor-target"
         >
           <span className="flex items-baseline space-x-2">
             <span className="font-serif-display font-light text-xl sm:text-2xl md:text-3xl tracking-[0.24em] text-warm-ivory transition-colors duration-300 group-hover:text-champagne-light">
@@ -72,7 +72,7 @@ export default function Navbar({ className }: NavbarProps) {
             href="#collection"
             onClick={scrollToCollection}
             aria-label="Explore Collection"
-            className="group relative flex items-center space-x-3 px-4 sm:px-5 py-2 rounded-full border border-white/10 hover:border-champagne/40 bg-obsidian-900/40 hover:bg-obsidian-800/60 backdrop-blur-md transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/60"
+            className="group relative flex items-center space-x-3 px-4 sm:px-5 py-2 rounded-full border border-white/10 hover:border-champagne/40 bg-obsidian-900/40 hover:bg-obsidian-800/60 backdrop-blur-md transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/60 cursor-target"
           >
             <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-warm-sand group-hover:text-warm-ivory transition-colors duration-300">
               Fleet

@@ -279,7 +279,7 @@ export default function EnquiryOverlay({
             type="button"
             onClick={onClose}
             aria-label="Close enquiry panel"
-            className="group flex items-center space-x-2 text-[9px] sm:text-[10px] uppercase tracking-[0.28em] text-muted-grey/60 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-white/30 rounded-sm px-1 cursor-pointer"
+            className="group flex items-center space-x-2 text-[9px] sm:text-[10px] uppercase tracking-[0.28em] text-muted-grey/60 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-white/30 rounded-sm px-1 cursor-pointer cursor-target"
           >
             <span>Close</span>
             <svg
@@ -343,7 +343,7 @@ export default function EnquiryOverlay({
                       ? `Contact Tokyo Rentals & Concierge about ${selectedVehicle.name} on WhatsApp`
                       : "Contact Tokyo Rentals & Concierge on WhatsApp"
                   }
-                  className="group inline-flex items-center space-x-3 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                  className="group inline-flex items-center space-x-3 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                 >
                   <span className="w-4 h-[1px] bg-white/20 group-hover:bg-champagne/60 transition-colors duration-200" />
                   <span>WhatsApp</span>
@@ -365,7 +365,7 @@ export default function EnquiryOverlay({
                       ? `Email Tokyo Rentals & Concierge about ${selectedVehicle.name}`
                       : "Email Tokyo Rentals & Concierge"
                   }
-                  className="group inline-flex items-center space-x-3 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                  className="group inline-flex items-center space-x-3 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                 >
                   <span className="w-4 h-[1px] bg-white/20 group-hover:bg-champagne/60 transition-colors duration-200" />
                   <span>Email</span>
@@ -383,7 +383,7 @@ export default function EnquiryOverlay({
                   data-contact-method="phone"
                   data-vehicle-id={selectedVehicle?.id}
                   aria-label="Call Tokyo Rentals & Concierge"
-                  className="group inline-flex items-center space-x-3 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm"
+                  className="group inline-flex items-center space-x-3 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-warm-sand/70 hover:text-warm-ivory transition-colors duration-200 focus:outline-none focus-visible:ring-1 focus-visible:ring-champagne/40 rounded-sm cursor-target"
                 >
                   <span className="w-4 h-[1px] bg-white/20 group-hover:bg-champagne/60 transition-colors duration-200" />
                   <span>Phone</span>

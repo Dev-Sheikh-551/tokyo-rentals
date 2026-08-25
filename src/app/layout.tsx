@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import GrainOverlay from "@/components/layout/GrainOverlay";
 import Navbar from "@/components/navigation/Navbar";
+import TargetCursor from "@/components/ui/TargetCursor";
 
 export const viewport: Viewport = {
   themeColor: "#060608",
@@ -41,6 +42,13 @@ export default function RootLayout({
       <body className="min-h-screen bg-obsidian-950 text-warm-ivory flex flex-col relative overflow-x-hidden selection:bg-champagne/30 selection:text-warm-ivory">
         <SmoothScroll>
           <GrainOverlay />
+          <TargetCursor
+            spinDuration={3}
+            hideDefaultCursor={true}
+            parallaxOn={true}
+            cursorColor="#ffffff"
+            cursorColorOnTarget="#c4a676"
+          />
           <Navbar />
           <main className="flex-1 w-full">{children}</main>
         </SmoothScroll>
