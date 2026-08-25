@@ -3,23 +3,7 @@
  *
  * Central source of truth for verified business contact channels.
  *
- * =========================================================================
- * ADMINISTRATION INSTRUCTIONS:
- * =========================================================================
- * 1. WhatsApp: Enter the official business number in international format
- *    without spaces or symbols, e.g. "+2207123456" or "2207123456".
- *    Keep null until verified with the business owner.
- *
- * 2. Email: Enter the primary concierge/reservation email address,
- *    e.g. "concierge@tokyorentals.gm".
- *    Keep null until verified.
- *
- * 3. Phone: Enter the primary direct telephone number in display format,
- *    e.g. "+220 712 3456".
- *    Keep null until verified.
- *
- * When any value is null, the corresponding UI actions will be cleanly
- * hidden without breaking layout or leaving empty space.
+ * Reads from environment variables (e.g. .env.local) with safe fallbacks.
  */
 
 export interface ContactConfig {
@@ -36,17 +20,18 @@ export interface ContactConfig {
 }
 
 export const contactConfig: ContactConfig = {
-  // Public WhatsApp number in international format.
-  // Set to null until verified.
-  whatsapp: null,
+  // Public WhatsApp number in international format (+220 for The Gambia)
+  whatsapp:
+    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.trim() || "+2205938108",
 
-  // Public concierge email.
-  // Set to null until verified.
-  email: null,
+  // Public concierge email
+  email:
+    process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() ||
+    "sheikhtijantouray551@gmail.com",
 
-  // Public telephone line.
-  // Set to null until verified.
-  phone: null,
+  // Public telephone line
+  phone:
+    process.env.NEXT_PUBLIC_CONTACT_PHONE?.trim() || "+220 593 8108",
 
   // Verified business trade name
   businessName: "Tokyo Rentals & Concierge",

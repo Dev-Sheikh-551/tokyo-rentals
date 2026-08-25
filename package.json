@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/nodejs": "^5.0.2",
     "@types/nodemailer": "^8.0.1",
     "clsx": "^2.1.1",
     "gsap": "^3.12.7",
